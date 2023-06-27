@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "fire-alarm-65287",
+  "private_key_id": "4e7be5c18bc7c40b617c914e117450247c87dfe8",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCkRJECYuKtQ/JX\nfzSfkn5LL9oArqHqmYUcrc/4L0g+P/jYbZo7Ov5Ybb9H8JSvqoVux5/mnFS784El\n/KKdEngJVGPYrxHMJIKP2WUmMbJe/UCrDonnjWWd/KjxOapWl1MNCk0bLsp3cSqO\nOZG0u+CyVfxdkIMQ+4YPqmMdbCe9PwkRYG4Prrgf84TqEP+qi/I+wPe1w+szHJJ6\nCaH7/XNzU5ttJtXAbH2373BpaSFxz7fIfPDChad6XGuQZ2ICPCLqBzVCxDgpexfc\nlUc8Mr3uUOjXOh+dFmbzXBN24t3N1xQhUVXuNJC8ZTinIuucHptIBgzb7JJzoQEg\nJz57BMl/AgMBAAECggEAR3rmtukcxlS40cYyufVfK4yJCp7zKkjfmZkw1EiO4Tep\nK1SWNov3PbeT8tQHf2FuasRHGmyQmrDdVBBZGox822JziEi2L+T7Q2lQEIyzl44Q\nY98Rt0baHyNgyIdVThTPOO9wmhGEXPFLmVQHyWOv5SpxhK1ruyoYLhzwwE7eBAUF\nh6bhWN0ktm5reAuYPE0NrtZWLp7wgY/r8VIOU1ESTKGXVN27FUsuy9/oR0nddiM0\ndCiGIa/PBMY/1F6lh88Lxgy1DeePp9P+IcehC4/5CzRcobjQXmUxPZLkIo7Xfjdp\neKlX9AlvrgiwZ8oiSqK75pYE7QghO2VNgxFvubFiQQKBgQDQuV8Bd3SW2CjpEVjl\nzz+lbxVQPnJd+7Lv5Mq5hOi0BtGzEtIxsmlZ1aHkn/g/1sXQEVtM358LpdqTyDff\nWZHdlomM8bMOIzEpUvLJ0EYm1/bJfOpnlUKPrUmTxjDezPsnCAfVLQBc+wokWgAi\nqBYF5MUvjkFMRGSIMLPEQsl7zwKBgQDJeXMLG+mBGjupz213KYvNTlCaOcgWxbDc\ngg2qIs/4lzhQ9tcgu6y/LEPr6uMc9cm717C+2cfrcu+kO1FMxq2mWvkh21ufH415\nNow4V+7Ga5nXVxpJyOd3qgArue7AI232nQ8cxt1hmHRIPJiGFlVm7hI1H3Jy4A5g\nn3WbVXfTUQKBgAFtQvj/mAxv7deqBrGLeSPoXnzt8Fo0HkUFi105S13vrf9LYaR1\nU8MJctHdRhUporCJbdZYsP2jZJseA0PDmPuqy8Xq4Q53rx5ZMs+uXMxnLYizEecj\nXhEdXiNkd3EOdakOpP8QD7CTBr643sdd3sirh62Li2a6EPXdX104F6iBAoGBAIQF\nmpZf/v5Dc29N5nxcdCjftb+qN2x8tO16J3wifcd3SEb9yXDAqm1Hk2aHr7Vtdnkp\n2L7nNLMbyN8Eo7y8wFOvb2t5M6us4GbakL3nGSdaoR/UCvzosozekGgW2dV8IfWl\na56+zZjDbwda9dN/1Qyy2qmG5tdR7Pnx4/4a3n9RAoGBANAr7Xab3CIXlaXHl46/\nM/7ZwAhgl6/8PooPWszl80mEa4LBeqpeYbyxZ984CGhEu6cMRLQ2DxbfZQyJPKt5\n5oMP02wG/5dWMjsukReMDeoXxMgmM8JehJSdQ+ly+5gkZ6MeXSlS0acdzpczyqV3\nSc01BCm7wmla0WR7SYJ5V4J8\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-u7lvi@fire-alarm-65287.iam.gserviceaccount.com",
+  "client_id": "100488669174516572325",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-u7lvi%40fire-alarm-65287.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

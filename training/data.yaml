@@ -1,0 +1,7 @@
+path: D:\\Licenta Sistem inteligent de supraveghere video pentru detectia incendiilor\\training
+train: .\train\images
+val: .\valid\images
+test: .\test\images
+
+nc: 2
+names: ['fire', 'smoke']
