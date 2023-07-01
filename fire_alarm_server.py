@@ -7,10 +7,11 @@ from ultralytics import YOLO
 import firebase_admin
 from firebase_admin import credentials, messaging, db
 
+SERVER_IP_ADDRESS = "10.10.20.116"  # change this to the server's IP address
 
 def firebase_send_alert(message, image_url):
-    # g = geocoder.ip('me')
-    g = geocoder.ip('8.8.8.8')  # Google's DNS server, for testing
+    g = geocoder.ip('me')
+    # g = geocoder.ip('8.8.8.8')  # Google's DNS server, for testing
     message = messaging.Message(
         notification=messaging.Notification(
             title='Fire Alert',
@@ -91,19 +92,20 @@ try:
                 results = model.predict(image)
                 image = results[0].plot()
                 img_filename = datetime.datetime.now().strftime("%Y-%m-%d-%H-%M-%S.jpg")
+                img_url = f'http://{SERVER_IP_ADDRESS}:8501/app/static/{img_filename}'
                 if results[0].boxes.shape[0] > 0:
                     if not is_fire:
                         is_fire = True
                         cv2.imwrite(f"./static/{img_filename}", image)
                         # get current date and time and format it with month in words
                         formatted_date = datetime.datetime.now().strftime("%B %d, %Y at %H:%M")
-                        firebase_send_alert(f'🔥A fire broke out in the area on {formatted_date}!', f'http://10.10.20.116:8501/app/static/{img_filename}')
+                        firebase_send_alert(f'🔥A fire broke out in the area on {formatted_date}!', img_url)
                         print("Fire detected!")
                         fire_history_json = {
                             "event": "Fire detected",
                             "source": CAM_ID,
                             "timestamp": datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
-                            "image_url": f'http://10.10.20.116:8501/app/static/{img_filename}',
+                            "image_url": img_url,
                         }
                         write_to_firebase_db(fire_history_json)
                 else:
@@ -112,13 +114,13 @@ try:
                         cv2.imwrite(f"./static/{img_filename}", image)
                         # get current date and time and format it with month in words
                         formatted_date = datetime.datetime.now().strftime("%B %d, %Y at %H:%M")
-                        firebase_send_alert(f'🚒The fire in the area was extinguished on {formatted_date}!', f'http://10.10.20.116:8501/app/static/{img_filename}')
+                        firebase_send_alert(f'🚒The fire in the area was extinguished on {formatted_date}!', img_url)
                         print("Fire extinguished!")
                         fire_history_json = {
                             "event": "Fire extinguished",
                             "source": CAM_ID,
                             "timestamp": datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
-                            "image_url": f'http://10.10.20.116:8501/app/static/{img_filename}',
+                            "image_url": img_url,
                         }
                         write_to_firebase_db(fire_history_json)
                 FRAME_WINDOW.image(image, channels="BGR", width=1280)
